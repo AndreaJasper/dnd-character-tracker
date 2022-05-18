@@ -5,22 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <div>
-      <%= render "layouts/main_nav" %>
-    </div>
-    <div class="main-container">
-      <% if notice.present? %>
-        <p class="notice"><%= notice %></p>
-      <% elsif alert.present? %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
-
-      <%= yield %>
+      <h1>The logged in show page</h1>
     </div>
   </body>
 </html>
