@@ -14,15 +14,15 @@
   <body>
     <div>
       <%= render "layouts/main_nav" %>
-    </div>
-    <div class="main-container">
-      <% if notice.present? %>
-        <p class="notice"><%= notice %></p>
-      <% elsif alert.present? %>
-        <p class="alert"><%= alert %></p>
-      <% end %>
+      <div class="container mx-auto">
+        <% if notice.present? %>
+          <p class="notice"><%= notice %></p>
+        <% elsif alert.present? %>
+          <p class="alert"><%= alert %></p>
+        <% end %>
 
-      <%= yield %>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
