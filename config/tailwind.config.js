@@ -11,6 +11,17 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        'purple': {
+          light: '#4A314D',
+          DEFAULT: '#11001C',
+        },
+        'gray': {
+          light: '#AEA9B1',
+          DEFAULT: '#9A949E',
+          dark: '#6B6570',
+        }
+      },
       container: {
         center: true,
       },
