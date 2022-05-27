@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 25px;
+  border-radius: 2px;
+  text-align: center;
+  max-width: 75%;
+  margin: 1em auto;
+}
+
+.primary-btn {
+  background: $primary-color;
+  color: $light-gray;
+}
+
+.secondary-btn {
+  background: $light-gray;
+  color: $primary-color;
+}
