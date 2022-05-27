@@ -28,6 +28,9 @@ Short description of your project
 ## Testing
 - `bundle exec rspec spec` or `bundle exec guard`
 
+## Recompile Tailwind
+- If you've made changes to your `tailwind.config.js`, you will need to recompile by running `./bin/dev`
+
 ## Debugging
 
 ## Deployment
