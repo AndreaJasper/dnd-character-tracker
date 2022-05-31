@@ -7,13 +7,11 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-    <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div>
-      <%= render "layouts/main_nav" %>
+      <%# <%= render "layouts/main_nav" %>
       <div class="container w-full mx-auto">
         <div class="md:flex">
           <% flash.each do |type, msg| %>

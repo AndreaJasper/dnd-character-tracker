@@ -1,0 +1,12 @@
+<div class="flex-col">
+  <div>
+    <%= current_user.email %>
+  </div>
+  <div>
+    <%= link_to "Reset my password", user_password_path %>
+  </div>
+  <div>
+    <%= button_to "Delete Account", user_registration_path, class: "bg-red-700" %>
+  </div>
+</div>
+
