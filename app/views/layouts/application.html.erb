@@ -14,8 +14,8 @@
   <body>
     <div>
       <%= render "layouts/main_nav" %>
-      <div class="container mx-auto">
-        <div class="w-full lg:items-center lg:w-auto">
+      <div class="container w-full mx-auto">
+        <div class="md:flex">
           <% flash.each do |type, msg| %>
             <% if type == "notice" %>
               <div class="alert alert-success">
@@ -35,15 +35,6 @@
           <%= yield %>
         </div>
       </div>
-    </div>
-    <%# Hapyn has this code %>
-    <div class="flash-area">
-      <% flash.each do |key, value| %>
-        <div uk-alert class="uk-alert-<%= key %>">
-          <a class="uk-alert-close" uk-close></a>
-          <%= value.html_safe %>
-        </div>
-      <% end %>
     </div>
   </body>
 </html>
