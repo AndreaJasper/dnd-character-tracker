@@ -1,5 +1,4 @@
-<div class="w-full lg:flex lg:items-center lg:w-auto">
-  <div class="text-sm lg:flex-grow">
+  <div class="text-sm">
     <% if current_user %>
       <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: "block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4" %>
     <% else %>
@@ -7,4 +6,3 @@
       <%= link_to 'Register', new_user_registration_path, class: "block mt-4 mx-4 button secondary-btn lg:inline-block lg:mt-0 hover:text-white" %>
     <% end %>
   </div>
-</div>
