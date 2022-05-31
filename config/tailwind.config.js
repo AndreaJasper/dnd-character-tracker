@@ -12,9 +12,10 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        'purple': {
-          light: '#4A314D',
-          DEFAULT: '#11001C',
+        'blue': {
+          light: '#003D5C',
+          DEFAULT: '#002233',
+          dark: '#000E14',
         },
         'gray': {
           light: '#AEA9B1',
