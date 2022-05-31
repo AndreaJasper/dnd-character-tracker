@@ -1,3 +1,7 @@
+a {
+  color: coral;
+}
+
 .button {
   padding: 10px 25px;
   border-radius: 2px;
@@ -7,11 +11,11 @@
 }
 
 .primary-btn {
-  background: $primary-color;
-  color: $light-gray;
+  background: $secondary-color;
+  color: $white;
 }
 
 .secondary-btn {
-  background: $light-gray;
-  color: $primary-color;
+  background: $white;
+  color: $secondary-color;
 }
