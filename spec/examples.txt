@@ -1,0 +1,5 @@
+example_id                               | status  | run_time        |
+---------------------------------------- | ------- | --------------- |
+./spec/features/users_spec.rb[1:1]       | failed  | 0.26572 seconds |
+./spec/helpers/users_helper_spec.rb[1:1] | pending | 0.00002 seconds |
+./spec/linters/rubocop_spec.rb[1:1]      | failed  | 2.82 seconds    |
