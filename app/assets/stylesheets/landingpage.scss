@@ -1,7 +1,19 @@
 .landing-page {
   background: linear-gradient(to bottom, #000E14, #003D5C);
   height: 100vh;
-  overflow: auto;
-  justify-content:center;
   align-items:center;
+  text-align: center;
+
+  .button {
+    width: 150px;
+  }
+
+  .landing-btns {
+    margin-top: 100px;
+  }
+}
+
+.logo {
+  max-width: 50%;
+  margin-bottom: 20px;
 }

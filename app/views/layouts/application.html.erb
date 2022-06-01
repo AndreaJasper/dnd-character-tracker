@@ -7,13 +7,12 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div>
       <%# <%= render "layouts/main_nav" %>
-      <div class="container w-full mx-auto">
-        <div class="md:flex">
           <% flash.each do |type, msg| %>
             <% if type == "notice" %>
               <div class="alert alert-success">
@@ -31,8 +30,6 @@
           <% end %>
 
           <%= yield %>
-        </div>
-      </div>
     </div>
   </body>
 </html>
