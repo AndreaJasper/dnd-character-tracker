@@ -11,25 +11,27 @@
   </head>
 
   <body>
-    <div>
-      <%# <%= render "layouts/main_nav" %>
-          <% flash.each do |type, msg| %>
-            <% if type == "notice" %>
-              <div class="alert alert-success">
-            <% elsif type == "alert" %>
-              <div class="alert alert-danger">
-            <% else %>
-              <div class='alert alert-<%= "#{type}" %>'>
-            <% end %>
-            <a href="#" class="close" data-dismiss="alert">&#215;</a>
-            <ul>
-              <li>
-                <%= msg %>
-              </li>
-            </ul>
+    <%# <%= render "layouts/main_nav" %>
+      <% flash.each do |type, msg| %>
+          <% if type == "notice" %>
+            <div class="alert alert-success">
+          <% elsif type == "alert" %>
+            <div class="alert alert-danger">
+          <% else %>
+            <div class='alert alert-<%= "#{type}" %>'>
           <% end %>
+          <a href="#" class="close" data-dismiss="alert">&#215;</a>
+          <ul>
+            <li>
+              <%= msg %>
+            </li>
+          </ul>
+        <% end %>
 
-          <%= yield %>
+        <%= yield %>
+      </div>
+
+      <%= yield %>
     </div>
   </body>
 </html>
