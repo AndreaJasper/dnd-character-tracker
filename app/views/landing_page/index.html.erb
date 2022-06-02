@@ -1,17 +1,13 @@
 <div class="flex landing-page">
   <div class="container px-4">
-    <%= image_tag "logo.jpg", alt: "blue and gray dragon logo", class: "mx-auto logo" %>
-    <div class="mx-4">
-      <div class="text-white">
-        <h1>DnD Character Tracker</h1>
-        <p class="py-4">Where you'll never have to worry about where you left your character sheet or forget old characters.</p>
-      </div>
+    <%= image_tag "logo2.png", alt: "blue and gray dragon logo", class: "mx-auto logo" %>
+    <div class="text-white content">
+      <h1>DnD Character Tracker</h1>
+      <p>Where you'll never have to worry about where you left your character sheet or forget old characters.</p>
     </div>
-    <div class="flex flex-row flex-1landing-btns mt-4">
-      <div class="flex-auto">
+    <div class="flex flex-row">
+      <div class="flex mx-auto">
         <%= link_to 'Login', new_user_session_path, class: "button primary-btn" %>
-      </div>
-      <div class="flex-auto">
         <%= link_to 'Register', new_user_registration_path, class: "button secondary-btn" %>
       </div>
     </div>
