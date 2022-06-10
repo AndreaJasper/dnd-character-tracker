@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   get "/users", to: "users#index"
+  resource :characters
 end
