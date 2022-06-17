@@ -2,7 +2,7 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
   def change
     create_table :characters do |t|
       t.string :name
-      t.string :class
+      t.string :char_class
       t.integer :level
       t.string :race
       t.string :background

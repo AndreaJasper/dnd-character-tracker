@@ -1,2 +1,51 @@
-<%= render "layouts/main_nav" %>
-<h1>Hello!</h1>
+<div class="container mx-auto px-4">
+  <h1>
+    <%= @character.name %>
+  </h1>
+  <p>Class:
+    <%= @character.class %>
+  </p>
+  <p>Leve:
+    <%= @character.level %>
+  </p>
+  <p>Race:
+    <%= @character.race %>
+  </p>
+  <p> Background:
+    <%= @character.background %>
+  </p>
+  <p>ALignment:
+    <%= @character.alignment %>
+  </p>
+  <p>XP:
+    <%= @character.experience_points %>
+  </p>
+  <p>Languages:
+    <%= @character.languages %>
+  </p>
+  <p>Equipment:
+    <%= @character.equipment %>
+  </p>
+  <p>Features:
+    <%= @character.features %>
+  </p>
+  <p>Character details:
+    <%= @character.character_details %>
+  </p>
+  <p>Monday</p>
+  <p>Copper:
+    <%= @character.copper %>
+  </p>
+  <p>Siler:
+    <%= @character.silver %>
+  </p>
+  <p>Gold:
+    <%= @character.gold %>
+  </p>
+  <p>Platinum:
+    <%= @character.platinum %>
+  </p>
+  <p>Treasure:
+    <%= @character.treasure %>
+  </p>
+</div>
