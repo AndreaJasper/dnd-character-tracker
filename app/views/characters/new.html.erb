@@ -1,64 +1,66 @@
-<h1>New Character</h1>
 
-<%= form_with model: @character do |form| %>
-  <div>
-    <%= form.label :name %><br>
-    <%= form.text_field :name %>
-  </div>
-  <div>
-    <%= form.label :class %><br>
-    <%= form.text_field :class %>
-  </div>
-  <div>
-    <%= form.label :level %><br>
-    <%= form.number_field :level %>
-  </div>
-  <div>
-    <%= form.label :race %><br>
-    <%= form.text_field :race %>
-  </div>
-  <div>
-    <%= form.label :background %><br>
-    <%= form.text_area :background %>
-  </div>
-  <div>
-    <%= form.label :experience_points %><br>
-    <%= form.number_field :experience_points %>
-  </div>
-  <div>
-    <%= form.label :languages %><br>
-    <%= form.text_field :languages %>
-  </div>
-  <div>
-    <%= form.label :equipment %><br>
-    <%= form.text_field :equipment %>
-  </div>
-  <div>
-    <%= form.label :features %><br>
-    <%= form.text_field :features %>
-  </div>
-  <div>
-    <%= form.label :character_details %><br>
-    <%= form.text_area :character_details %>
-  </div>
-  <div>
-    <%= form.label :copper %><br>
-    <%= form.number_field :copper %>
-  </div>
-  <div>
-    <%= form.label :silver %><br>
-    <%= form.number_field :silver %>
-  </div>
-  <div>
-    <%= form.label :gold %><br>
-    <%= form.number_field :gold %>
-  </div>
-  <div>
-    <%= form.label :platinum %><br>
-    <%= form.number_field :platinum %>
-  </div>
+<h2 class="text-2xl py-5">New Character</h2>
+<div class="flex flex-col md:flex-row flex-wrap">
+  <%= form_with model: @character do |form| %>
+    <div class="flex-wrap">
+      <%= form.label :name %><br>
+      <%= form.text_field :name %>
+    </div>
+    <div class="flex-wrap">
+      <%= form.label :class %><br>
+      <%= form.text_field :class %>
+    </div>
+    <div>
+      <%= form.label :level %><br>
+      <%= form.number_field :level %>
+    </div>
+    <div>
+      <%= form.label :race %><br>
+      <%= form.text_field :race %>
+    </div>
+    <div>
+      <%= form.label :background %><br>
+      <%= form.text_area :background %>
+    </div>
+    <div>
+      <%= form.label :experience_points %><br>
+      <%= form.number_field :experience_points %>
+    </div>
+    <div>
+      <%= form.label :languages %><br>
+      <%= form.text_field :languages %>
+    </div>
+    <div>
+      <%= form.label :equipment %><br>
+      <%= form.text_field :equipment %>
+    </div>
+    <div>
+      <%= form.label :features %><br>
+      <%= form.text_field :features %>
+    </div>
+    <div>
+      <%= form.label :character_details %><br>
+      <%= form.text_area :character_details %>
+    </div>
+    <div>
+      <%= form.label :copper %><br>
+      <%= form.number_field :copper %>
+    </div>
+    <div>
+      <%= form.label :silver %><br>
+      <%= form.number_field :silver %>
+    </div>
+    <div>
+      <%= form.label :gold %><br>
+      <%= form.number_field :gold %>
+    </div>
+    <div>
+      <%= form.label :platinum %><br>
+      <%= form.number_field :platinum %>
+    </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>

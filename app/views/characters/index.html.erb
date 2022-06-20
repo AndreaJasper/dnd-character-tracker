@@ -1,12 +1,30 @@
-<div class="container mx-auto px-4">
-  <h2 class="uppercase">Character List</h2>
-  <ul>
-    <% @characters.each do |character| %>
-      <li>
-        <a href="<%= character_path(character) %>">
+<div class="characters">
+  <div class="flex items-center justify-between flex-wrap flex-col md:flex-row py-5">
+    <h2 class="text-2xl">You have <%= @characters.count %> characters.</h2>
+    <%= link_to "Creat New Character", new_character_path, class: "button primary-btn" %>
+  </div>
+   <% @characters.each do |character| %>
+    <div class="flex flex-col md:flex-row pb-8 md:pb-4 char_list">
+      <div class="flex-wrap md:w-60">
+        <a href="<%= character_path(character) %>" class="text-teal">
           <%= character.name %>
         </a>
-      </li>
-    <% end %>
-  </ul>
+      </div>
+      <div class="flex-wrap w-60">
+        <%= character.char_class %>
+      </div>
+      <div class="flex-wrap w-60">
+        <%= character.race %>
+      </div>
+      <div class="flex-wrap w-20">
+        <%= character.level %>
+      </div>
+      <div class="flex-wrap w-20 justify-end">
+        <a href="/">Test</a>
+      </div>
+      <div class="flex-wrap w-20 content-end">
+        <a href="/" class="warning-btn">Delete</a>
+      </div>
+    </div>
+  <% end %>
 </div>
